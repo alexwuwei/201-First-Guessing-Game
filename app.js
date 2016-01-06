@@ -5,10 +5,11 @@ console.log("the user's name is " + userName);
 
 //First question block
 var questionOne = prompt("is my name Hugo?");
+questionOne = questionOne.toUpperCase();
 console.log(userName + " answered the question with " + questionOne);
    if (questionOne === 'Y' || questionOne === 'YES') {
      alert ("you are right, " + userName + "! For the record, your answer was " + questionOne);
-     counter += 1;
+     counter += 1;  //counts right answer
      console.log(userName + " has answered " + counter + " questions correctly");
  } else {
    alert ("you are wrong, " + userName + " but that's ok! For the record, your answer was " + questionOne);
@@ -16,10 +17,11 @@ console.log(userName + " answered the question with " + questionOne);
 
 //Second question block
  var questionTwo = prompt("am I a llama?");
+ questionTwo = questionTwo.toUpperCase();
  console.log(userName +" answered the question with " + questionTwo);
- if (questionTwo === 'N') {
+ if (questionTwo === 'N' || questionTwo === 'NO') {
    alert ("you are right, " + userName + "! For the record, your answer was " + questionTwo);
-   counter += 1;
+   counter += 1; //counts right answer
    console.log(userName + " has answered " + counter + " questions correctly");
 } else {
  alert ("you are wrong, " + userName + " but that's ok! For the record, your answer was " + questionTwo);
@@ -27,10 +29,11 @@ console.log(userName + " answered the question with " + questionOne);
 
 //Third question block
   var questionThree = prompt("Do I like coding?");
+  questionThree = questionThree.toUpperCase();
   console.log(userName + " answered the question with " + questionThree);
-  if (questionThree === 'Y') {
+  if (questionThree === 'Y' || questionThree === 'YES') {
     alert ("you are right, " + userName + "! For the record, your answer was " + questionThree);
-    counter += 1;
+    counter += 1; //counts right answer
     console.log(userName + " has answered " + counter + " questions correctly");
 } else {
   alert ("you are wrong, " + userName + " but that's ok! For the record, your answer was " + questionThree);
