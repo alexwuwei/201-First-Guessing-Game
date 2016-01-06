@@ -44,6 +44,10 @@ alert ("Congratulations, " + userName +", You've answered " + counter + " questi
    console.log(userName +" answered the question with " + bonusQuestion);
    var numberQuestionWrongCounter = 0;
    while (bonusQuestion != 6) {
-      alert("Wrong. So, so wrong. You've had " + numberQuestionWrongCounter + " wrong answers so far. Please take this more seriously and try again");
       numberQuestionWrongCounter += 1;
+      alert("Wrong. So, so wrong. You've guessed " + numberQuestionWrongCounter + " times so far. Please take this more seriously and try again");
+      bonusQuestion = prompt("So once again, what number am I thinking of? (between 1 and 10)");
     }
+//Final congratulatory alert
+
+alert("You got it right, " + userName + "! Just so you know, it took you " + numberQuestionWrongCounter + " tries to get it right. So yeah, think about that for a while and feel bad.");
