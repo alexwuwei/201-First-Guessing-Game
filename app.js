@@ -62,6 +62,7 @@ function fourthQuestion(){
     bonusQuestion = prompt("So once again, what number am I thinking of? (between 1 and 10)");
   }
   res4.textContent = ("You got it right, " + userName + "! Just so you know, it took you " + numberQuestionWrongCounter + " tries to get it right. So yeah, think about that for a while and feel bad.");
+  counter++;
 }
 
 
@@ -91,3 +92,6 @@ secondQuestion();
 thirdQuestion();
 fourthQuestion();
 fifthQuestion();
+
+res6 = document.getElementById('rightAnswers');
+res6.textContent = ('You answered ' + counter + ' questions correctly!');
