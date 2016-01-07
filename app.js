@@ -41,19 +41,28 @@ function thirdQuestion(){
     questionThree = questionThree.toUpperCase();
     console.log(userName + " answered the question with " + questionThree);
     if (questionThree === 'Y' || questionThree === 'YES') {
-      res2.textContent = ("you are right, " + userName + "! For the record, your answer was " + questionThree);
+      res3.textContent = ("you are right, " + userName + "! For the record, your answer was " + questionThree);
       counter += 1; //counts right answer
       console.log(userName + " has answered " + counter + " questions correctly");
   } else {
-    res2.textContent = ("you are wrong, " + userName + " but that's ok! For the record, your answer was " + questionThree);
+    res3.textContent = ("you are wrong, " + userName + " but that's ok! For the record, your answer was " + questionThree);
   }
 
 }
-// function firstQuestion(){
-//   var res1 = document.getElementById('firstAnswer');
-//
-//
-// }
+
+function fourthQuestion(){
+  var res4 = document.getElementById('fourthAnswer');
+  //Number question block
+  var bonusQuestion = prompt("Now for something completely different: I'm thinking of a number between 1 and 10. Guess as many times as you need until you get it right. Afterwards, I'll tell you how many times you failed miserably before getting it right (no pressure)");
+  console.log(userName +" answered the question with " + bonusQuestion);
+  var numberQuestionWrongCounter = 0;
+  while (bonusQuestion != 6) {
+    numberQuestionWrongCounter += 1;
+    res4.textContent = ("Wrong. So, so wrong. You've guessed " + numberQuestionWrongCounter + " times so far. Please take this more seriously and try again");
+    bonusQuestion = prompt("So once again, what number am I thinking of? (between 1 and 10)");
+  }
+  res4.textContent = ("You got it right, " + userName + "! Just so you know, it took you " + numberQuestionWrongCounter + " tries to get it right. So yeah, think about that for a while and feel bad.");
+}
 // function firstQuestion(){
 //   var res1 = document.getElementById('firstAnswer');
 //
@@ -110,8 +119,10 @@ function thirdQuestion(){
 //     }
 // //Final congratulatory alert
 //
-// alert("You got it right, " + userName + "! Just so you know, it took you " + numberQuestionWrongCounter + " tries to get it right. So yeah, think about that for a while and feel bad.");
+//alert("You got it right, " + userName + "! Just so you know, it took you " + numberQuestionWrongCounter + " tries to get it right. So yeah, think about that for a while and feel bad.");
 
 
 //firstQuestion();
-secondQuestion();
+//secondQuestion();
+//thirdQuestion();
+fourthQuestion();
