@@ -21,10 +21,10 @@ console.log("the user's name is " + userName);
          var answer = prompt (quesData[i] [0]);
          if (answer.toUpperCase() === quesData[i] [1] || answer.toUpperCase() === quesData[i] [2]){
            quesData[i] [5].textContent = quesData[i] [3];
-
+           quesData[i] [5].className = 'right';
          } else {
-            quesData[i] [5]. textContent = quesData[i] [4];
-
+            quesData[i] [5].textContent = quesData[i] [4];
+            quesData[i] [5].className = 'wrong'; 
          };
             }
 //
