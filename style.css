@@ -1,0 +1,10 @@
+.right {
+   color: green;
+  /*background-color: skyblue;*/
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuUdHMnLAOeb0Jao-gvNC0YnhSRN_hy5fU49yyXHSKgJW8iFDHsQ");
+}
+  .wrong {
+    color:red;
+    /*background-color: yellow;*/
+    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuUdHMnLAOeb0Jao-gvNC0YnhSRN_hy5fU49yyXHSKgJW8iFDHsQ");
+  }
